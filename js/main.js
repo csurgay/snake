@@ -7,8 +7,9 @@ var ms, tLastStep=0, tStepDelay=200;
 
 const games=[];
 const color=new Color();
-games.push(new Game(20,20,20,20,25));
-games.push(new Game(550,20,15,15,20));
+games.push(new Game(20,20,15,22,30));
+games.push(new Game(500,20,15,15,25));
+games.push(new Game(500,420,17,12,20));
 
 animate();
 

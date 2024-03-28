@@ -24,9 +24,11 @@ class Board {
         ctx.beginPath();
         ctx.strokeStyle = color.INK;
         ctx.lineWidth=1;
-        for (let i=0; i<=this.bx; i++) {
+        for (let i=0; i<=this.by; i++) {
             ctx.moveTo(this.x,this.y+i*this.bd);
             ctx.lineTo(this.x+this.bx*this.bd,this.y+i*this.bd);
+        }
+        for (let i=0; i<=this.bx; i++) {
             ctx.moveTo(this.x+i*this.bd,this.y);
             ctx.lineTo(this.x+i*this.bd,this.y+this.by*this.bd);
         }
