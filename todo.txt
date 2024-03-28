@@ -1,0 +1,2 @@
+- Controls on Mobile
+- Smooth 1 pixel snake movement
