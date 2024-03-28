@@ -4,7 +4,7 @@ class Snake {
         this.board=board;
         this.food=food;
         this.dx=rand(3)-1;
-        this.dy=this.dx==0?rand(3)-1:0;
+        this.dy=this.dx==0?2*rand(2)-1:0;
         this.enlarge=false;
         this.init(1+rand(4),rand(this.board.bx),
             rand(this.board.by),this.dx,this.dy);
@@ -13,7 +13,11 @@ class Snake {
         for (let i=0; i<l; i++) {
             this.s.push([x,y]);
             x-=dx;
+            if (x==this.board.bx) x=0;
+            if (x==-1) x=this.board.bx-1;
             y-=dy;
+            if (y==this.board.by) y=0;
+            if (y==-1) y=this.board.by-1;
         }
     }
     draw() {
