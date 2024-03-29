@@ -20,7 +20,6 @@ function mouseupevent(e) {
 }
 
 function touchstart(e) {
-    e.preventDefault();
     var t=e.changedTouches[0];
     var i=control.clicked(t.pageX,t.pageY);
     if (i!=-1) {
