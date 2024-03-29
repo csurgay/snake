@@ -1,15 +1,15 @@
 const canvas=document.getElementById("boricanvas");
 const ctx=canvas.getContext("2d");
-var ww=window.innerWidth, wh=window.innerHeight;
 addEventListener('keyup', keyupevent);
 
 var ms, tLastStep=0, tStepDelay=200;
 
 const games=[];
 const color=new Color();
-games.push(new Game(20,20,15,22,30));
-games.push(new Game(500,20,15,15,25));
-games.push(new Game(500,420,17,12,20));
+games.push(new Game(10,10,9,12,54));
+games.push(new Game(510,10,15,15,25));
+games.push(new Game(510,410,30,20,12));
+games.push(new Game(100,100,6,4,100,1,3));
 
 animate();
 

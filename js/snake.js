@@ -1,12 +1,12 @@
 class Snake {
-    constructor(board,food) {
+    constructor(board,food,len) {
         this.s=[];
         this.board=board;
         this.food=food;
         this.dx=rand(3)-1;
         this.dy=this.dx==0?2*rand(2)-1:0;
         this.enlarge=false;
-        this.init(1+rand(4),rand(this.board.bx),
+        this.init(1+rand(len),rand(this.board.bx),
             rand(this.board.by),this.dx,this.dy);
     }
     init(l,x,y,dx,dy) {

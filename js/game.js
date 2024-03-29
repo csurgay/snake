@@ -1,13 +1,13 @@
 class Game {
-    constructor(x,y,bx,by,bd) {
+    constructor(x,y,bx,by,bd,l=4,nf=7) {
         this.x=x;
         this.y=y;
         this.bx=bx;
         this.by=by;
         this.bd=bd;
         this.board=new Board(x,y,bx,by,bd);
-        this.food=new Food(this.board,7);
-        this.snake=new Snake(this.board,this.food);
+        this.food=new Food(this.board,nf);
+        this.snake=new Snake(this.board,this.food,0);
         this.running=true;
     }
     draw() {

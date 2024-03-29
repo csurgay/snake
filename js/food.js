@@ -19,12 +19,13 @@ class Food {
     }
     draw() {
         ctx.fillStyle = color.FOOD;
+        var m=this.board.bd/5;
         for (var i=0; i<this.board.by; i++) {
             for (var j=0; j<this.board.bx; j++) {
                 if (this.board.b[i][j]=="F")
-                ctx.fillRect(this.board.x+j*this.board.bd+7, 
-                this.board.y+i*this.board.bd+7, 
-                this.board.bd-14, this.board.bd-14);
+                ctx.fillRect(this.board.x+j*this.board.bd+m, 
+                this.board.y+i*this.board.bd+m, 
+                this.board.bd-2*m, this.board.bd-2*m);
             }
         }
     }
