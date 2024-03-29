@@ -11,7 +11,11 @@ games.push(new Game(510,10,15,15,25,2));
 games.push(new Game(510,410,30,20,12,5));
 //games.push(new Game(100,100,6,4,100,1));
 
-animate();
+const images=new Images(4);
+images.addImage("afonya","afonya.png");
+images.addImage("cseresznye","cseresznye.png");
+images.addImage("eper","eper.png");
+images.addImage("ananasz","ananasz.png");
 
 function animate() {
     canvas.width=window.innerWidth;

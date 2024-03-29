@@ -101,7 +101,7 @@ class Snake {
         }
     }
     checkFood() {
-        if (this.board.b[this.s[0][1]][this.s[0][0]] == "F") {
+        if (this.board.b[this.s[0][1]][this.s[0][0]] != " ") {
             this.board.b[this.s[0][1]][this.s[0][0]] = " ";
             this.food.addOneFood();
             this.enlarge=true;
