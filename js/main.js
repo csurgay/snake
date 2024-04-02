@@ -8,7 +8,7 @@ const color=new Color();
 //games.push(new Game(10,10,9,12,54,1));
 //games.push(new Game(510,10,15,15,25,2));
 //games.push(new Game(510,410,30,20,12,5));
-games.push(new Game(0,0,10,6,180,1));
+games.push(new Game(0,0,10,10,50,1));
 
 const control=new Control(450,800);
 const events=new Events();
