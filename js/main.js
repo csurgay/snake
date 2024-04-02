@@ -1,19 +1,20 @@
 const canvas=document.getElementById("boricanvas");
 const ctx=canvas.getContext("2d");
-addEventListener('keyup', keyupevent);
-addEventListener('mouseup', mouseupevent);
-addEventListener("touchstart", touchstart);
 
-var ms, tLastStep=0, tStepDelay=20, stepCount=10;
+var ms, tLastStep=0, tStepDelay=50, stepCount=10;
 
 const games=[];
 const color=new Color();
-games.push(new Game(10,10,9,12,54,1));
-games.push(new Game(510,10,15,15,25,2));
-games.push(new Game(510,410,30,20,12,5));
-//games.push(new Game(100,100,6,4,100,1));
+//games.push(new Game(10,10,9,12,54,1));
+//games.push(new Game(510,10,15,15,25,2));
+//games.push(new Game(510,410,30,20,12,5));
+games.push(new Game(0,0,10,6,180,1));
 
 const control=new Control(450,800);
+const events=new Events();
+addEventListener('keydown', keyupevent);
+addEventListener('mouseup', mouseupevent);
+addEventListener("touchstart", touchstart);
 
 const images=new Images(4);
 images.addImage("afonya","afonya.png");
