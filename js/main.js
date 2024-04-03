@@ -1,7 +1,7 @@
 const canvas=document.getElementById("boricanvas");
 const ctx=canvas.getContext("2d");
 
-var ms, tLastStep=0, tStepDelay=50, stepCount=10;
+var ms, tLastStep=0, tStepDelay=20, stepCount=10;
 
 const games=[];
 const color=new Color();
