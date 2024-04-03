@@ -1,2 +1,7 @@
+Done
+- Multi table game
 - Controls on Mobile
 - Smooth 1 pixel snake movement
+
+Todo
+- Responsive sizes and controls
